@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+}
+
+/* btn style */
+.btn {
+  padding: 0.6em 2em;
+  color:#000;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 999;
+  position: absolute;
+  top: 90%;
+  left: 46%;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.75);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: silver;
+}
+.clock {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 250px;
+  border: 10px solid #111;
+  background-color: #c7c7c7;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clock.dark {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: 10px solid #fff;
+}
+.num {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.num1 {
+  transform: rotate(30deg);
+}
+
+.num2 {
+  transform: rotate(60deg);
+}
+
+.num3 {
+  transform: rotate(90deg);
+}
+
+.num4 {
+  transform: rotate(120deg);
+}
+
+.num5 {
+  transform: rotate(150deg);
+}
+
+.num6 {
+  transform: rotate(180deg);
+}
+
+.num7 {
+  transform: rotate(210deg);
+}
+
+.num8 {
+  transform: rotate(240deg);
+}
+
+.num9 {
+  transform: rotate(270deg);
+}
+
+.num10 {
+  transform: rotate(300deg);
+}
+
+.num11 {
+  transform: rotate(330deg);
+}
+
+.hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hand div {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+.hand.dark div {
+  background-color: #fff;
+}
+.sec {
+  width: 1px;
+  height: 40%;
+}
+
+.min {
+  height: 38%;
+  width: 4px;
+  border-radius: 2px;
+}
+
+.hour {
+  height: 28%;
+  width: 8px;
+  border-radius: 4px;
+}
+
+.hand .middle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+}
+.hand .middle.dark {
+  background-color: #fff;
+}
+
+.digital-clock .container {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 2rem;
+}
+
+.digital-clock .container .digit {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 60%;
+  top: 47%;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.btn.dark,
+.digital-clock .container.dark,
+.calendar.dark {
+  box-shadow: 0px 0px 16px 2px rgba(255, 255, 255, 0.75);
+  color: #fff;
+}
