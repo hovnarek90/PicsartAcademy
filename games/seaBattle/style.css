@@ -32,7 +32,7 @@ body .container img {
   width: 80%;
   height: 70%;
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -56,7 +56,8 @@ body .container img {
 
 .cell {
   width: 9%;
-  height: 9%;
+    height: auto;
+
   border: 1px solid #ccc;
   box-sizing: border-box;
   margin: 1px;
@@ -81,3 +82,9 @@ body .container img {
 .green {
   background-color: green;
 }
+
+.container .ship .ship_one {
+
+}
+
+
